@@ -7,7 +7,9 @@
             "modules": [
                 1,
                 2,
-                3
+                3,
+                4,
+                9
             ]
         },
         {
@@ -16,8 +18,10 @@
             "description": "This is a programme",
             "modules": [
                 1,
+                2,
                 3,
-                4
+                6,
+                9
             ]
         },
         {
@@ -25,9 +29,11 @@
             "name": "BSc Sport Psychology",
             "description": "This is a programme",
             "modules": [
+                1,
                 2,
-                4,
-                5
+                3,
+                8,
+                9
             ]
         },
         {
@@ -35,9 +41,11 @@
             "name": "BSc Forensic Psychology",
             "description": "This is a programme",
             "modules": [
+                1,
                 2,
-                4,
-                5
+                3,
+                5,
+                9
             ]
         },
         {
@@ -45,54 +53,74 @@
             "name": "BSc Psychology and Child Development",
             "description": "This is a programme",
             "modules": [
+                1,
                 2,
-                4,
-                5
-            ]
-        },
-        {
-            "id": 6,
-            "name": "Foundation Year: Psychology",
-            "description": "This is a programme",
-            "modules": [
-                2,
-                4,
-                5
+                3,
+                7,
+                9
             ]
         }
     ],
     "modules": [
         {
             "id": 1,
-            "name": "Module A",
+            "name": "Introduction to Research Skills for Psychologists - Quantitative",
             "description": "Introduction to Psychology",
-            "details": "This module covers basic concepts of psychology...",
+            "details": "Lorem ipsum dolor",
             "assessment": "Poster Presentation (50%), Essay (50%)"
         },
         {
             "id": 2,
-            "name": "Module B",
+            "name": "Introduction to Research Skills for Psychologists - Qualitative",
             "description": "Psychology of Learning",
             "details": "This module explores how learning occurs in humans...",
             "assessment": "Poster Presentation (50%), Essay (50%)"
         },
         {
             "id": 3,
-            "name": "Module C",
+            "name": "Professional Development for Psychologists",
             "description": "Cognitive Neuroscience",
             "details": "An in-depth look at the neural bases of cognitive processes...",
             "assessment": "Poster Presentation (50%), Essay (50%)"
         },
         {
             "id": 4,
-            "name": "Module D",
+            "name": "Contemporary Issues in Psychology 1",
             "description": "Research Methods in Psychology",
             "details": "This module teaches research methods and statistics...",
             "assessment": "Poster Presentation (50%), Essay (50%)"
         },
         {
             "id": 5,
-            "name": "Module E",
+            "name": "Introduction to Forensic Psychology",
+            "description": "Developmental Psychology",
+            "details": "This module covers psychological development across the lifespan...",
+            "assessment": "Poster Presentation (50%), Essay (50%)"
+        },
+        {
+            "id": 6,
+            "name": "Introduction to Counselling Psychology",
+            "description": "Developmental Psychology",
+            "details": "This module covers psychological development across the lifespan...",
+            "assessment": "Poster Presentation (50%), Essay (50%)"
+        },
+        {
+            "id": 7,
+            "name": "Introduction to Child and Educational Psychology",
+            "description": "Developmental Psychology",
+            "details": "This module covers psychological development across the lifespan...",
+            "assessment": "Poster Presentation (50%), Essay (50%)"
+        },
+        {
+            "id": 8,
+            "name": "Principles of Sport Psychology",
+            "description": "Developmental Psychology",
+            "details": "This module covers psychological development across the lifespan...",
+            "assessment": "Poster Presentation (50%), Essay (50%)"
+        },
+        {
+            "id": 9,
+            "name": "Understanding Human Behaviour",
             "description": "Developmental Psychology",
             "details": "This module covers psychological development across the lifespan...",
             "assessment": "Poster Presentation (50%), Essay (50%)"
