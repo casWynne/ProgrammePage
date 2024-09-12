@@ -7,6 +7,18 @@
     --charcoal: #232323;
 }
 
+/* Adjust image size uniformly */
+.programme-image {
+    width: 20%;  /* Set desired width */
+    height: 20%; /* Set desired height */
+    object-fit: cover; /* Ensures the image fills the box and is cropped to fit */
+    display: block;
+    margin: 0 auto; /* Center the image */
+    border-radius: 8px; /* Optional: adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow for a polished look */
+}
+
+
 header {
     position: fixed;
     top: 0;
