@@ -1,23 +1,37 @@
 :root {
-    --primary-dark-red: #4A0021;
-    --primary-bright-red: #C70000;
-    --rich-black: #212121;
-    --white: #FFFFFF;
-    --cream: #F6EEE5;
-    --coral: #FF4E36;
+    --primary: #4A0021;
+    --secondary: #FFC1D9;
+    --hover: #ffe6ef;
+    --grey: #B5EAEA;
+    --background: #fafafa;
+    --charcoal: #232323;
 }
 
 header {
-    background-color: var(--primary-dark-red);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background-color: var(--primary);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.container {
+    padding-left: 1%;
+    padding-top: 100px;
+}
+
 
 /* Button styling */
 button {
-    background-color: var(--coral);
-    color: var(--white);
+    background-color: var(--secondary);
+    color: var(--primary);
     border: none;
     width: 50%;
-    padding: 20px 20px;
+    padding: 15px 15px;
     font-size: 16px;
     cursor: pointer;
     display: block;
@@ -27,7 +41,7 @@ button {
 }
 
 button:hover {
-    background-color: var(--primary-bright-red); /* Bright red on hover */
+    background-color: var(--hover); /* Bright red on hover */
 }
 
 /* Center buttons horizontally at the bottom of their containers */
@@ -42,8 +56,12 @@ button:hover {
 #programme-menu, #module-menu, #module-page {
     display: none;
     position: relative;
+    /* max-height: calc(100vh - 220px); /* Adjust to fit within the viewport */
     min-height: 400px;
     padding-bottom: 60px;
+}
+#module-menu, #module-page {
+    margin-bottom: 50px;
 }
 
 /* Active class to make the element visible */
@@ -62,41 +80,46 @@ button:hover {
 
 /* Body and typography styling */
 body {
+    margin: 0;
     font-family: 'Open Sans', Arial, sans-serif;
-    color: var(--rich-black); /* Rich black for text */
-    background-color: var(--cream); /* Cream background */
+    color: var(--); /* Rich black for text */
+    background-color: var(--background); /* background background */
 }
 
 h1, h2 {
     font-family: 'Merriweather', 'Times New Roman', serif;
-    color: var(--primary-dark-red); /* Dark red for headings */
+    color: var(--primary); /* Dark red for headings */
 }
 
 footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
     text-align: center;
     padding: 10px;
-    background-color: var(--cream);
-    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Horizontally center buttons */
+    align-items: center; /* Vertically center buttons */
+    gap: 10px; /* Space between the buttons if needed */
 }
 
 footer button {
-    background-color: var(--coral);
-    color: var(--white);
-    border: none;
-    padding: 20px 20px;
+    background-color: var(--charcoal);
+    color: var(--background);
+    width: 30%;
+    padding: 12px 24px;
     font-size: 16px;
     border-radius: 8px;
-    margin: 5px;
     cursor: pointer;
+    border: none;
 }
 
 footer button:hover {
-    background-color: var(--primary-bright-red);
+    background-color: var(--hover);
+    color: var(--primary)
 }
+
 
 .hidden {
     display: none;
