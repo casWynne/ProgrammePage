@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LTU School of Psychology Programme and Module Information</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Correct reference -->
+</head>
+
+<body>
+    <header>
+        <img src="assets/headerImage.png" alt="Header Image" style="width: auto; height: auto;">
+    </header>
+
+    <div class="container">
+        <!-- <h1 id="page-header">Select a programme</h1> -->
+        <div id="programme-menu"></div>
+        <div id="module-menu" class="hidden">
+            <h2 id="module-menu-title"></h2>
+            <div id="module-list"></div>
+        </div>
+        <div id="module-page" class="hidden">
+            <h2 id="module-page-title"></h2>
+            <p id="module-description"></p>
+            <p id="module-details"></p>
+            <p id="module-credits"></p>
+        </div>
+    </div>
+
+    <footer>
+        <button id="back-to-programmes" class="hidden">Back to Programmes</button>
+        <button id="back-to-modules" class="hidden">Back to Modules</button>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
