@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LTU School of Psychology Programme and module informaiton</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+</head>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="page-header">Select a programme</h1>
+    </header>
+    
+    <!-- Programme Menu (This was missing) -->
+    <div id="programme-menu"></div>
+
+    <!-- Module Menu -->
+    <div id="module-menu" class="hidden">
+        <h2 id="module-menu-title"></h2>
+        <div id="module-list"></div>
+        <button id="back-to-programmes" onclick="goBackToProgrammeMenu()">Back to Programmes</button>
+    </div>
+
+    <!-- Module Page -->
+    <div id="module-page" class="hidden">
+        <h2 id="module-page-title"></h2>
+        <p id="module-description"></p>
+        <p id="module-details"></p>
+        <p id="module-credits"></p>
+        <button id="back-to-modules" onclick="goBackToModuleMenu()">Back to Modules</button>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
