@@ -7,6 +7,10 @@
     --coral: #FF4E36;
 }
 
+header {
+    background-color: var(--primary-dark-red);
+}
+
 /* Button styling */
 button {
     background-color: var(--coral);
