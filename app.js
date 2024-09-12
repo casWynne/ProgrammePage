@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const programmeMenu = document.getElementById('programme-menu');
     const moduleMenu = document.getElementById('module-menu');
     const modulePage = document.getElementById('module-page');
+    const backToProgrammesBtn = document.getElementById('back-to-programmes');
+    const backToModulesBtn = document.getElementById('back-to-modules');
 
     // Load JSON Data
     fetch('modules.json')
@@ -12,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .catch(error => console.error('Error loading JSON:', error));
 
     function initializeProgrammeMenu(data) {
-        document.getElementById("page-header").innerHTML = `Select a programme`
+        document.getElementById("page-header").innerHTML = "Select a programme";
         programmeMenu.innerHTML = '<h2>Programmes</h2>';
         data.programmes.forEach(programme => {
             const button = document.createElement('button');
@@ -23,14 +25,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Set initial visibility
         programmeMenu.classList.add('active');
+        backToProgrammesBtn.classList.add('hidden');
     }
 
     function showModuleMenu(programme, data) {
-        document.getElementById("page-header").innerHTML = `${programme.name}`
-        // Populate the module menu
+        document.getElementById("page-header").innerHTML = `${programme.name}`;
         moduleMenu.innerHTML = `
-        <p><strong>Programme Description:</strong> ${programme.description}</p>
-        <h2>Modules</h2>
+            <p><strong>Programme Description:</strong> ${programme.description}</p>
+            <h2>Modules</h2>
         `;
         programme.modules.forEach(moduleId => {
             const module = data.modules.find(mod => mod.id === moduleId);
@@ -40,44 +42,41 @@ document.addEventListener('DOMContentLoaded', () => {
             moduleMenu.appendChild(button);
         });
 
-        const backButton = document.createElement('button');
-        backButton.textContent = 'Back to Programmes';
-        backButton.addEventListener('click', goBackToProgrammeMenu);
-        moduleMenu.appendChild(backButton);
-
-        // Hide programme menu, show module menu
+        // Toggle visibility
         programmeMenu.classList.remove('active');
         moduleMenu.classList.add('active');
         modulePage.classList.remove('active');
+
+        backToProgrammesBtn.classList.remove('hidden');
+        backToModulesBtn.classList.add('hidden');
     }
 
     function showModulePage(module) {
+        document.getElementById("page-header").innerHTML = `${module.name}`;
         modulePage.innerHTML = `
             <h2>${module.name}</h2>
             <p><strong>Description:</strong> ${module.description}</p>
             <p><strong>Details:</strong> ${module.details}</p>
         `;
 
-        const backButton = document.createElement('button');
-        backButton.textContent = 'Back to Modules';
-        backButton.addEventListener('click', goBackToModuleMenu);
-        modulePage.appendChild(backButton);
-
-        // Hide module menu, show module page
         moduleMenu.classList.remove('active');
         modulePage.classList.add('active');
+
+        backToModulesBtn.classList.remove('hidden');
     }
 
-    function goBackToProgrammeMenu() {
-        document.getElementById("page-header").innerHTML = `Select a programme`;
-        // Show programme menu, hide module menu
+    backToProgrammesBtn.addEventListener('click', () => {
         moduleMenu.classList.remove('active');
         programmeMenu.classList.add('active');
-    }
+        backToProgrammesBtn.classList.add('hidden');
+        backToModulesBtn.classList.add('hidden');
+        document.getElementById("page-header").innerHTML = "Select a programme";
+    });
 
-    function goBackToModuleMenu() {
-        // Show module menu, hide module page
+    backToModulesBtn.addEventListener('click', () => {
         modulePage.classList.remove('active');
         moduleMenu.classList.add('active');
-    }
+        backToModulesBtn.classList.add('hidden');
+        backToProgrammesBtn.classList.remove('hidden');
+    });
 });
