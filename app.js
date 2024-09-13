@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 targetElement.appendChild(paragraph);
             } else if (detail.type === 'image') {
                 const image = document.createElement('img');
-                image.classList.add('programme-image');
+                image.classList.add('details-image');
                 image.src = detail.src;
                 image.alt = detail.alt;
                 targetElement.appendChild(image);
@@ -54,32 +54,57 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function showModuleMenu(programme, data) {
-        // Set the programme name
-        moduleMenu.innerHTML = `
-            <h2>${programme.name}</h2>
-        `;
-        // Render additional details for the selected programme
-        // Pass the entire array of details to the renderDetails function
-        renderDetails(moduleMenu, programme.details);
+        // Clear previous content
+        moduleMenu.innerHTML = '';
 
-        // Now render the list of modules
-        moduleMenu.innerHTML += `<h2>Modules</h2>`;
-        let moduleCount = 0;
+        // Create a container for the layout (flex container)
+        const container = document.createElement('div');
+        container.classList.add('module-menu-container');
 
-        // Loop through the modules in the programme
+        // Create a div for programme details (left side)
+        const moduleDetails = document.createElement('div');
+        moduleDetails.classList.add('module-details');
+        renderDetails(moduleDetails, programme.details);
+
+        // Create a div for staff details (left side)
+        let staffDetails = document.createElement('div');
+        const staffMember = data.staff.find(staff => staff.id === programme.staff);
+        if (staffMember) {
+            staffDetails.innerHTML = `
+                    <h3>Staff Member</h3>
+                    <p>If you have any questions or would like to know more about this ${programme.name} then please talk to ${staffMember.name} for more details.</p>
+                    <img src="${staffMember.picture}" alt="${staffMember.name}" class="staff-image">
+                    <p class="staff-name"><strong>${staffMember.name}</strong></p>
+                `;
+        } else {
+            staffDetails.innerHTML = `<p>Please speak to a member of staff for more details</p>`;
+        }
+
+        // Append staff details below programme details in the same column
+        moduleDetails.appendChild(staffDetails);
+
+        // Create a div for buttons (right side)
+        const moduleButtons = document.createElement('div');
+        moduleButtons.classList.add('module-buttons');
+        moduleButtons.innerHTML += `<h2>Modules</h2>`;
         programme.modules.forEach(moduleId => {
             const module = data.modules.find(mod => mod.id === moduleId);
             if (module) {
-                moduleCount++;
                 const button = document.createElement('button');
                 button.textContent = module.name;
                 button.addEventListener('click', () => showModulePage(module));
-                moduleMenu.appendChild(button);
+                moduleButtons.appendChild(button);
             } else {
                 console.warn(`Module with ID ${moduleId} not found.`);
             }
         });
-        console.log(`Found ${moduleCount} modules for programme ${programme.name}`);
+
+        // Append both details and buttons to the container
+        container.appendChild(moduleDetails);
+        container.appendChild(moduleButtons);
+
+        // Append container to the moduleMenu
+        moduleMenu.appendChild(container);
 
         // Toggle visibility
         programmeMenu.classList.remove('active');
@@ -89,13 +114,14 @@ document.addEventListener('DOMContentLoaded', () => {
         backToModulesBtn.classList.add('hidden');
     }
 
+
     function showModulePage(module) {
         // document.getElementById("page-header").innerHTML = `${module.name}`;
         modulePage.innerHTML = `
                 <h2>${module.name}</h2>
             `;
 
-            renderDetails(modulePage, module.details);
+        renderDetails(modulePage, module.details);
 
         moduleMenu.classList.remove('active');
         modulePage.classList.add('active');
