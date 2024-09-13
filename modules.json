@@ -1,325 +1,342 @@
 {
-    "programmes": [
+  "programmes": [
+    {
+      "id": 1,
+      "name": "BSc Psychology",
+      "details": [
         {
-            "id": 1,
-            "name": "BSc Psychology",
-            "details": [
-                {
-                  "type": "header",
-                  "content": "Dynamic options"
-                },
-                {
-                  "type": "text",
-                  "content": "I have extended the functionality of the details section in details to the programmes and module sections so we can add headers, text and images."
-                },
-                {
-                  "type": "image",
-                  "src": "assets/psychology.jpg",
-                  "alt": "Psychology Programme Image"
-                }
-            ],
-            "modules": [
-                1,
-                2,
-                3,
-                4,
-                9
-            ]
+          "type": "header",
+          "content": "Dynamic options"
         },
         {
-            "id": 2,
-            "name": "BSc Counselling Psychology",
-            "details": [
-                {
-                  "type": "header",
-                  "content": "Programme Overview"
-                },
-                {
-                  "type": "text",
-                  "content": "This programme provides an in-depth understanding of human behavior..."
-                },
-                {
-                  "type": "image",
-                  "src": "assets/psychology.jpg",
-                  "alt": "Psychology Programme Image"
-                }
-            ],
-            "modules": [
-                1,
-                2,
-                3,
-                6,
-                9
-            ]
+          "type": "text",
+          "content": "I have extended the functionality of the details section in details to the programmes and module sections so we can add headers, text and images."
         },
         {
-            "id": 3,
-            "name": "BSc Sport Psychology",
-            "details": [
-                {
-                  "type": "header",
-                  "content": "Programme Overview"
-                },
-                {
-                  "type": "text",
-                  "content": "This programme provides an in-depth understanding of human behavior..."
-                },
-                {
-                  "type": "image",
-                  "src": "assets/psychology.jpg",
-                  "alt": "Psychology Programme Image"
-                }
-            ],
-            "modules": [
-                1,
-                2,
-                3,
-                8,
-                9
-            ]
-        },
-        {
-            "id": 4,
-            "name": "BSc Forensic Psychology",
-            "details": [
-                {
-                  "type": "header",
-                  "content": "Programme Overview"
-                },
-                {
-                  "type": "text",
-                  "content": "This programme provides an in-depth understanding of human behavior..."
-                },
-                {
-                  "type": "image",
-                  "src": "assets/psychology.jpg",
-                  "alt": "Psychology Programme Image"
-                }
-            ],
-            "modules": [
-                1,
-                2,
-                3,
-                5,
-                9
-            ]
-        },
-        {
-            "id": 5,
-            "name": "BSc Psychology and Child Development",
-            "details": [
-                {
-                  "type": "header",
-                  "content": "Programme Overview"
-                },
-                {
-                  "type": "text",
-                  "content": "This programme provides an in-depth understanding of human behavior..."
-                },
-                {
-                  "type": "image",
-                  "src": "assets/psychology.jpg",
-                  "alt": "Psychology Programme Image"
-                }
-            ],
-            "modules": [
-                1,
-                2,
-                3,
-                7,
-                9
-            ]
+          "type": "image",
+          "src": "assets/psychology.jpg",
+          "alt": "Psychology Programme Image"
         }
-    ],
-    "modules": [
+      ],
+      "modules": [
+        1,
+        2,
+        3,
+        4,
+        9
+      ],
+      "staff": 1
+    },
+    {
+      "id": 2,
+      "name": "BSc Counselling Psychology",
+      "details": [
         {
-            "id": 1,
-            "name": "Introduction to Research Skills for Psychologists - Quantitative",
-            "description": "Introduction to Psychology",
-            "details": [
-              {
-                "type": "header",
-                "content": "Programme Overview"
-              },
-              {
-                "type": "text",
-                "content": "This programme provides an in-depth understanding of human behavior..."
-              },
-              {
-                "type": "image",
-                "src": "assets/psychology.jpg",
-                "alt": "Psychology Programme Image"
-              }
-          ],
-            "assessment": "Poster Presentation (50%), Essay (50%)"
+          "type": "header",
+          "content": "Programme Overview"
         },
         {
-            "id": 2,
-            "name": "Introduction to Research Skills for Psychologists - Qualitative",
-            "description": "Psychology of Learning",
-            "details": [
-                {
-                  "type": "header",
-                  "content": "Programme Overview"
-                },
-                {
-                  "type": "text",
-                  "content": "This programme provides an in-depth understanding of human behavior..."
-                },
-                {
-                  "type": "image",
-                  "src": "assets/psychology.jpg",
-                  "alt": "Psychology Programme Image"
-                }
-            ],
-            "assessment": "Poster Presentation (50%), Essay (50%)"
+          "type": "text",
+          "content": "This programme provides an in-depth understanding of human behavior..."
         },
         {
-            "id": 3,
-            "name": "Professional Development for Psychologists",
-            "description": "Cognitive Neuroscience",
-            "details": [
-                {
-                  "type": "header",
-                  "content": "Programme Overview"
-                },
-                {
-                  "type": "text",
-                  "content": "This programme provides an in-depth understanding of human behavior..."
-                },
-                {
-                  "type": "image",
-                  "src": "assets/psychology.jpg",
-                  "alt": "Psychology Programme Image"
-                }
-            ],
-            "assessment": "Poster Presentation (50%), Essay (50%)"
-        },
-        {
-            "id": 4,
-            "name": "Contemporary Issues in Psychology 1",
-            "description": "Research Methods in Psychology",
-            "details": [
-                {
-                  "type": "header",
-                  "content": "Programme Overview"
-                },
-                {
-                  "type": "text",
-                  "content": "This programme provides an in-depth understanding of human behavior..."
-                },
-                {
-                  "type": "image",
-                  "src": "assets/psychology.jpg",
-                  "alt": "Psychology Programme Image"
-                }
-            ],
-            "assessment": "Poster Presentation (50%), Essay (50%)"
-        },
-        {
-            "id": 5,
-            "name": "Introduction to Forensic Psychology",
-            "description": "Developmental Psychology",
-            "details": [
-                {
-                  "type": "header",
-                  "content": "Programme Overview"
-                },
-                {
-                  "type": "text",
-                  "content": "This programme provides an in-depth understanding of human behavior..."
-                },
-                {
-                  "type": "image",
-                  "src": "assets/psychology.jpg",
-                  "alt": "Psychology Programme Image"
-                }
-            ],
-            "assessment": "Poster Presentation (50%), Essay (50%)"
-        },
-        {
-            "id": 6,
-            "name": "Introduction to Counselling Psychology",
-            "description": "Developmental Psychology",
-            "details": [
-                {
-                  "type": "header",
-                  "content": "Programme Overview"
-                },
-                {
-                  "type": "text",
-                  "content": "This programme provides an in-depth understanding of human behavior..."
-                },
-                {
-                  "type": "image",
-                  "src": "assets/psychology.jpg",
-                  "alt": "Psychology Programme Image"
-                }
-            ],
-            "assessment": "Poster Presentation (50%), Essay (50%)"
-        },
-        {
-            "id": 7,
-            "name": "Introduction to Child and Educational Psychology",
-            "description": "Developmental Psychology",
-            "details": [
-                {
-                  "type": "header",
-                  "content": "Programme Overview"
-                },
-                {
-                  "type": "text",
-                  "content": "This programme provides an in-depth understanding of human behavior..."
-                },
-                {
-                  "type": "image",
-                  "src": "assets/psychology.jpg",
-                  "alt": "Psychology Programme Image"
-                }
-            ],
-            "assessment": "Poster Presentation (50%), Essay (50%)"
-        },
-        {
-            "id": 8,
-            "name": "Principles of Sport Psychology",
-            "description": "Developmental Psychology",
-            "details": [
-                {
-                  "type": "header",
-                  "content": "Programme Overview"
-                },
-                {
-                  "type": "text",
-                  "content": "This programme provides an in-depth understanding of human behavior..."
-                },
-                {
-                  "type": "image",
-                  "src": "assets/psychology.jpg",
-                  "alt": "Psychology Programme Image"
-                }
-            ],
-            "assessment": "Poster Presentation (50%), Essay (50%)"
-        },
-        {
-            "id": 9,
-            "name": "Understanding Human Behaviour",
-            "description": "Developmental Psychology",
-            "details": [
-                {
-                  "type": "header",
-                  "content": "Programme Overview"
-                },
-                {
-                  "type": "text",
-                  "content": "This programme provides an in-depth understanding of human behavior..."
-                },
-                {
-                  "type": "image",
-                  "src": "assets/psychology.jpg",
-                  "alt": "Psychology Programme Image"
-                }
-            ],
-            "assessment": "Poster Presentation (50%), Essay (50%)"
+          "type": "image",
+          "src": "assets/psychology.jpg",
+          "alt": "Psychology Programme Image"
         }
-    ]
+      ],
+      "modules": [
+        1,
+        2,
+        3,
+        6,
+        9
+      ],
+      "staff": 2
+    },
+    {
+      "id": 3,
+      "name": "BSc Sport Psychology",
+      "details": [
+        {
+          "type": "header",
+          "content": "Programme Overview"
+        },
+        {
+          "type": "text",
+          "content": "This programme provides an in-depth understanding of human behavior..."
+        },
+        {
+          "type": "image",
+          "src": "assets/psychology.jpg",
+          "alt": "Psychology Programme Image"
+        }
+      ],
+      "modules": [
+        1,
+        2,
+        3,
+        8,
+        9
+      ],
+      "staff": 1
+    },
+    {
+      "id": 4,
+      "name": "BSc Forensic Psychology",
+      "details": [
+        {
+          "type": "header",
+          "content": "Programme Overview"
+        },
+        {
+          "type": "text",
+          "content": "This programme provides an in-depth understanding of human behavior..."
+        },
+        {
+          "type": "image",
+          "src": "assets/psychology.jpg",
+          "alt": "Psychology Programme Image"
+        }
+      ],
+      "modules": [
+        1,
+        2,
+        3,
+        5,
+        9
+      ],
+      "staff": 1
+    },
+    {
+      "id": 5,
+      "name": "BSc Psychology and Child Development",
+      "details": [
+        {
+          "type": "header",
+          "content": "Programme Overview"
+        },
+        {
+          "type": "text",
+          "content": "This programme provides an in-depth understanding of human behavior..."
+        },
+        {
+          "type": "image",
+          "src": "assets/psychology.jpg",
+          "alt": "Psychology Programme Image"
+        }
+      ],
+      "modules": [
+        1,
+        2,
+        3,
+        7,
+        9
+      ],
+      "staff": 1
+    }
+  ],
+  "modules": [
+    {
+      "id": 1,
+      "name": "Introduction to Research Skills for Psychologists - Quantitative",
+      "description": "Introduction to Psychology",
+      "details": [
+        {
+          "type": "header",
+          "content": "Programme Overview"
+        },
+        {
+          "type": "text",
+          "content": "This programme provides an in-depth understanding of human behavior..."
+        },
+        {
+          "type": "image",
+          "src": "assets/psychology.jpg",
+          "alt": "Psychology Programme Image"
+        }
+      ],
+      "assessment": "Poster Presentation (50%), Essay (50%)"
+    },
+    {
+      "id": 2,
+      "name": "Introduction to Research Skills for Psychologists - Qualitative",
+      "description": "Psychology of Learning",
+      "details": [
+        {
+          "type": "header",
+          "content": "Programme Overview"
+        },
+        {
+          "type": "text",
+          "content": "This programme provides an in-depth understanding of human behavior..."
+        },
+        {
+          "type": "image",
+          "src": "assets/psychology.jpg",
+          "alt": "Psychology Programme Image"
+        }
+      ],
+      "assessment": "Poster Presentation (50%), Essay (50%)"
+    },
+    {
+      "id": 3,
+      "name": "Professional Development for Psychologists",
+      "description": "Cognitive Neuroscience",
+      "details": [
+        {
+          "type": "header",
+          "content": "Programme Overview"
+        },
+        {
+          "type": "text",
+          "content": "This programme provides an in-depth understanding of human behavior..."
+        },
+        {
+          "type": "image",
+          "src": "assets/psychology.jpg",
+          "alt": "Psychology Programme Image"
+        }
+      ],
+      "assessment": "Poster Presentation (50%), Essay (50%)"
+    },
+    {
+      "id": 4,
+      "name": "Contemporary Issues in Psychology 1",
+      "description": "Research Methods in Psychology",
+      "details": [
+        {
+          "type": "header",
+          "content": "Programme Overview"
+        },
+        {
+          "type": "text",
+          "content": "This programme provides an in-depth understanding of human behavior..."
+        },
+        {
+          "type": "image",
+          "src": "assets/psychology.jpg",
+          "alt": "Psychology Programme Image"
+        }
+      ],
+      "assessment": "Poster Presentation (50%), Essay (50%)"
+    },
+    {
+      "id": 5,
+      "name": "Introduction to Forensic Psychology",
+      "description": "Developmental Psychology",
+      "details": [
+        {
+          "type": "header",
+          "content": "Programme Overview"
+        },
+        {
+          "type": "text",
+          "content": "This programme provides an in-depth understanding of human behavior..."
+        },
+        {
+          "type": "image",
+          "src": "assets/psychology.jpg",
+          "alt": "Psychology Programme Image"
+        }
+      ],
+      "assessment": "Poster Presentation (50%), Essay (50%)"
+    },
+    {
+      "id": 6,
+      "name": "Introduction to Counselling Psychology",
+      "description": "Developmental Psychology",
+      "details": [
+        {
+          "type": "header",
+          "content": "Programme Overview"
+        },
+        {
+          "type": "text",
+          "content": "This programme provides an in-depth understanding of human behavior..."
+        },
+        {
+          "type": "image",
+          "src": "assets/psychology.jpg",
+          "alt": "Psychology Programme Image"
+        }
+      ],
+      "assessment": "Poster Presentation (50%), Essay (50%)"
+    },
+    {
+      "id": 7,
+      "name": "Introduction to Child and Educational Psychology",
+      "description": "Developmental Psychology",
+      "details": [
+        {
+          "type": "header",
+          "content": "Programme Overview"
+        },
+        {
+          "type": "text",
+          "content": "This programme provides an in-depth understanding of human behavior..."
+        },
+        {
+          "type": "image",
+          "src": "assets/psychology.jpg",
+          "alt": "Psychology Programme Image"
+        }
+      ],
+      "assessment": "Poster Presentation (50%), Essay (50%)"
+    },
+    {
+      "id": 8,
+      "name": "Principles of Sport Psychology",
+      "description": "Developmental Psychology",
+      "details": [
+        {
+          "type": "header",
+          "content": "Programme Overview"
+        },
+        {
+          "type": "text",
+          "content": "This programme provides an in-depth understanding of human behavior..."
+        },
+        {
+          "type": "image",
+          "src": "assets/psychology.jpg",
+          "alt": "Psychology Programme Image"
+        }
+      ],
+      "assessment": "Poster Presentation (50%), Essay (50%)"
+    },
+    {
+      "id": 9,
+      "name": "Understanding Human Behaviour",
+      "description": "Developmental Psychology",
+      "details": [
+        {
+          "type": "header",
+          "content": "Programme Overview"
+        },
+        {
+          "type": "text",
+          "content": "This programme provides an in-depth understanding of human behavior..."
+        },
+        {
+          "type": "image",
+          "src": "assets/psychology.jpg",
+          "alt": "Psychology Programme Image"
+        }
+      ],
+      "assessment": "Poster Presentation (50%), Essay (50%)"
+    }
+  ],
+  "staff": [
+    {
+      "id": 1,
+      "name": "Candice Whitaker",
+      "picture": "assets/candice.png"
+    },
+    {
+      "id": 2,
+      "name": "Fayme Yeates",
+      "picture": "assets/fayme.png"
+    }
+  ]
 }
