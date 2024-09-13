@@ -8,7 +8,7 @@
 }
 
 /* Adjust image size uniformly */
-.programme-image {
+.details-image {
     width: 20%;  /* Set desired width */
     height: 20%; /* Set desired height */
     object-fit: cover; /* Ensures the image fills the box and is cropped to fit */
@@ -18,6 +18,19 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow for a polished look */
 }
 
+.staff-image {
+    width: 20%;  /* Set desired width */
+    height: 20%; /* Set desired height */
+    object-fit: cover; /* Ensures the image fills the box and is cropped to fit */
+    display: block;
+    margin: 0 auto; /* Center the image */
+    border-radius: 8px; /* Optional: adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow for a polished look */
+}
+
+.staff-name {
+    text-align: center;
+}
 
 header {
     position: fixed;
@@ -89,6 +102,47 @@ button:hover {
         font-size: 18px;
     }
 }
+
+/* For larger screens, show the module menu buttons on the right */
+@media (min-width: 1024px) {
+    .module-menu-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* Content takes 2/3 of the screen */
+    .module-details {
+        width: 66%;
+    }
+
+    /* Buttons on the right, take 1/3 of the screen */
+    .module-buttons {
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 20px; /* Add some padding for spacing */
+    }
+
+    .module-buttons button {
+        width: 90%;
+        padding: 15px;
+        font-size: 18px;
+    }
+}
+
+/* For smaller screens (as it is) */
+@media (max-width: 1023px) {
+    .module-menu-container {
+        display: block;
+    }
+
+    .module-details, .module-buttons {
+        width: 100%;
+    }
+}
+
 
 /* Body and typography styling */
 body {
